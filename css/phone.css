@@ -1,0 +1,112 @@
+/* Navigation */
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 0.8rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* Home section */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+#home1{
+    height: 370px; 
+    padding: 3px 28px;
+}
+#home2{
+    height: 370px; 
+    padding: 3px 28px;
+}
+#home3{
+    height: 370px; 
+    padding: 3px 28px;
+}
+#home5{
+    height: 370px; 
+    padding: 3px 28px;
+}
+#home6{
+    height: 498px; 
+    padding: 3px 28px;
+}
+#home::before{
+    height: 480px; 
+}
+#home1::before{
+    height: 480px; 
+}
+#home2::before{
+    height: 480px; 
+}
+#home3::before{
+    height: 480px; 
+}
+#home5::before{
+    height: 480px; 
+}
+
+#home p{
+    font-size: 13px;
+}
+#home5 p{
+    font-size: 13px;
+}
+
+.row{
+    flex-direction: column;
+    align-items: center;
+}
+.card1{
+    width: 83%;
+}
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Clients section */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+/* Footer */
+
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.fetch input{
+    padding: 1%;
+    margin: 1%;
+    width: 38%;
+  }
+  .fetch button{
+    color: white;
+    background-color: dodgerblue;
+    font-size: 1rem;
+    padding: 3%;
+  }
