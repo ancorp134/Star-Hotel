@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Hotel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo3.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="rooms.html">Rooms</a></li>
+            <li class="item"><a href="About.html">About</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+    <section id="home3">
+    </section>
+
+    <div class="about">
+        <h2> Enter Details</h2>
+        <img src="/img/sym.jpeg" alt="">
+    </div>
+
+    <div class="booking">
+        <form id="bookingForm">
+            <div class="book">
+                <label for="name">Full Name:</label>
+                <input type="Name" id="name" placeholder="Name" required>
+            </div>
+            <div class="book">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="book">
+                <label for="phone">Enter Mobile Number:</label>
+                <input type="phone" id="phone" placeholder="Enter PhoneNumber" required>
+            </div>
+            <div class="book">
+                <label for="checkin">Check In:</label>
+                <input type="date" name="checkin" id="checkin" required>
+            </div>
+            <div class="book">
+                <label for="checkout">Check Out:</label>
+                <input type="date" name="checkout" id="checkout" required>
+            </div>
+            <div class="book">
+                <label for="roomtype">Room Type:</label>
+                <select name="roomtype" id="roomtype" required>
+                    <option value="Deluxe Room" selected>Deluxe Room</option>
+                    <option value="Premium Deluxe Room">Premium Deluxe Room</option>
+                    <option value="Standard Twin Room">Standard Twin Room</option>
+                    <option value="President Suite">President Suite</option>
+                    <option value="Executive Suite">Executive Suite</option>
+                    <option value="Murphy Room">Murphy Room</option>
+                </select>
+            </div>
+            <div class="book">
+                <label for="noofroom">Rooms:</label>
+                <select name="roomtype" id="noofroom" required>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="book">
+                <label for="noofmember">Members:</label>
+                <select name="roomtype" id="noofmember" required>
+
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3r">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <button type="submit" id="buttons">Book Now</button>
+            <div class="alert">Your Booking is Confirmed</div>
+        </form>
+        <br>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+    <script src="booking.js"></script>
+
+</body>
+
+</html>

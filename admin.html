@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Hotel Admin Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo3.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="rooms.html">Rooms</a></li>
+            <li class="item"><a href="About.html">About</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section id="home4">
+
+        <div class="admin">
+            <form onsubmit=" return validate()" action="searchbooking.html">
+                <div class="adminlogin">Login</div>
+                <div class="tab">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email1" placeholder="Email" required>
+                </div>
+                <div class="tab">
+                    <label for="passwpord">Password:</label><br>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                <div class="login">
+                    <button class="login button" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById("email1");
+            var password = document.getElementById("password");
+
+            if (username.value == "admin123@gmail.com" && password.value == "admin123") {
+                return true;
+
+            }
+
+            if (username.value != "admin123@gmail.com" || password.value != "admin123") {
+                alert("Incorrect Email and Password");
+                return false;
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

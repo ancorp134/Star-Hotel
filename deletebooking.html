@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo3.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="searchbooking.html">Search Booking</a></li>
+            <li class="item"><a href="deletebooking.html">Delete Booking</a></li>
+        </ul>
+        <div class="btnright">
+            <a href="admin.html"><button>Log Out</button></a>
+        </div>
+    </nav>
+    <section id="home6"></section>
+
+    <div>
+        <div class="fetch">
+            <h2>Enter Mobile Number to Delete Booking</h2>
+            <input type="text" id="Delete" required> <br>
+            <button type="button" onclick="deletedata();">Delete Booking</button>
+        </div>
+        <div class="alert">Booking is Deleted Successfully..</div>
+    </div>
+    </section>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="searchdeletebooking.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD9_NcDY-M750eB6-1aygAj3-79Mr_mn7s",
+            authDomain: "hotel-management-ddbd5.firebaseapp.com",
+            databaseURL: "https://hotel-management-ddbd5.firebaseio.com",
+            projectId: "hotel-management-ddbd5",
+            storageBucket: "hotel-management-ddbd5.appspot.com",
+            messagingSenderId: "265169504837",
+            appId: "1:265169504837:web:dd5b0004d8192678a7f12c"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+</body>
+
+</html>
